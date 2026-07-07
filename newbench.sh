@@ -5,6 +5,7 @@
 # URL: https://raw.githubusercontent.com/newbench/stable/refs/heads/main/newbench.sh
 # https://github.com/su-haris/simple-network-speedtest
 #
+
 trap _exit INT QUIT TERM
 
 _red() {
