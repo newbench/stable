@@ -946,7 +946,7 @@ cn_get_as_path() {
     local preceding_asn
 
     if ! _exists "mtr"; then
-        echo "MTR not available|Unknown"
+        echo "MTR is not available|Unknown"
         return
     fi
 
