@@ -715,7 +715,6 @@ get_disk_data() {
             known_path+=($fs_path)
             ((disk_total_size += fs_size))
             ((disk_used_size += fs_used))
-            # df(1) return 512 instead 1K blocks for btrfs
             if [ "$fs_type" == "btrfs" ]; then
                 ((disk_total_size = disk_total_size / 2))
                 ((disk_used_size = disk_used_size / 2))
